@@ -1,0 +1,77 @@
+{
+  "name": "Markdown-MC",
+  "scopeName": "text.html.markdown.mc",
+  "patterns": [
+    {
+      "include": "#qcm-block"
+    },
+    {
+      "include": "#question"
+    },
+    {
+      "include": "#correct-answer"
+    },
+    {
+      "include": "#incorrect-answer"
+    },
+    {
+      "include": "text.html.markdown"
+    }
+  ],
+  "repository": {
+    "qcm-block": {
+      "name": "markup.heading.qcm.markdown-mc",
+      "match": "^(##)\\s+(\\[)([^\\]]+)(\\])\\s*$",
+      "captures": {
+        "1": {
+          "name": "punctuation.definition.heading.markdown"
+        },
+        "2": {
+          "name": "punctuation.definition.qcm.begin.markdown-mc"
+        },
+        "3": {
+          "name": "entity.name.qcm.identifier.markdown-mc"
+        },
+        "4": {
+          "name": "punctuation.definition.qcm.end.markdown-mc"
+        }
+      }
+    },
+    "question": {
+      "name": "markup.heading.question.markdown-mc",
+      "match": "^(###)\\s+(.+)\\s*$",
+      "captures": {
+        "1": {
+          "name": "punctuation.definition.heading.markdown"
+        },
+        "2": {
+          "name": "entity.name.section.question.markdown-mc"
+        }
+      }
+    },
+    "correct-answer": {
+      "name": "markup.list.correct.markdown-mc",
+      "match": "^(\\+)\\s+(.+)\\s*$",
+      "captures": {
+        "1": {
+          "name": "punctuation.definition.list.correct.markdown-mc"
+        },
+        "2": {
+          "name": "markup.correct.answer.markdown-mc"
+        }
+      }
+    },
+    "incorrect-answer": {
+      "name": "markup.list.incorrect.markdown-mc",
+      "match": "^(-)\\s+(.+)\\s*$",
+      "captures": {
+        "1": {
+          "name": "punctuation.definition.list.incorrect.markdown-mc"
+        },
+        "2": {
+          "name": "markup.incorrect.answer.markdown-mc"
+        }
+      }
+    }
+  }
+}

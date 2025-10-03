@@ -1,0 +1,65 @@
+{
+  "QCM Block": {
+    "prefix": "qcm",
+    "body": [
+      "## [$1]",
+      "### $2",
+      "",
+      "+ $3",
+      "- $4",
+      "- $5",
+      "- $6",
+      "",
+      "$0"
+    ],
+    "description": "Crée un bloc QCM complet"
+  },
+  "QCM Header": {
+    "prefix": "qcmh",
+    "body": [
+      "## [$1]"
+    ],
+    "description": "En-tête de QCM avec identifiant"
+  },
+  "Question": {
+    "prefix": "quest",
+    "body": [
+      "### $1"
+    ],
+    "description": "Question de QCM"
+  },
+  "Correct Answer": {
+    "prefix": "+",
+    "body": [
+      "+ $1"
+    ],
+    "description": "Réponse correcte"
+  },
+  "Incorrect Answer": {
+    "prefix": "-",
+    "body": [
+      "- $1"
+    ],
+    "description": "Réponse incorrecte"
+  },
+  "Multiple Correct Answers": {
+    "prefix": "qcm+",
+    "body": [
+      "+ $1",
+      "+ $2",
+      "- $3",
+      "- $4"
+    ],
+    "description": "Bloc avec plusieurs bonnes réponses"
+  },
+  "Single Correct Answer": {
+    "prefix": "qcm1",
+    "body": [
+      "+ $1",
+      "- $2",
+      "- $3",
+      "- $4"
+    ],
+    "description": "Bloc avec une seule bonne réponse"
+  }
+}

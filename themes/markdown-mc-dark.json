@@ -1,0 +1,82 @@
+{
+  "name": "Markdown-MC Dark",
+  "type": "dark",
+  "colors": {
+    "editor.background": "#1e1e1e",
+    "editor.foreground": "#d4d4d4"
+  },
+  "tokenColors": [
+    {
+      "name": "QCM Identifier",
+      "scope": [
+        "entity.name.qcm.identifier.markdown-mc",
+        "punctuation.definition.qcm.begin.markdown-mc",
+        "punctuation.definition.qcm.end.markdown-mc"
+      ],
+      "settings": {
+        "foreground": "#569cd6",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "Question",
+      "scope": "entity.name.section.question.markdown-mc",
+      "settings": {
+        "foreground": "#dcdcaa",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "Correct Answer",
+      "scope": [
+        "markup.correct.answer.markdown-mc",
+        "punctuation.definition.list.correct.markdown-mc"
+      ],
+      "settings": {
+        "foreground": "#4ec9b0",
+        "fontStyle": ""
+      }
+    },
+    {
+      "name": "Correct Answer Plus Sign",
+      "scope": "punctuation.definition.list.correct.markdown-mc",
+      "settings": {
+        "foreground": "#4ec9b0",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "Incorrect Answer",
+      "scope": [
+        "markup.incorrect.answer.markdown-mc",
+        "punctuation.definition.list.incorrect.markdown-mc"
+      ],
+      "settings": {
+        "foreground": "#f44747",
+        "fontStyle": ""
+      }
+    },
+    {
+      "name": "Incorrect Answer Dash",
+      "scope": "punctuation.definition.list.incorrect.markdown-mc",
+      "settings": {
+        "foreground": "#f44747",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "QCM Heading",
+      "scope": "markup.heading.qcm.markdown-mc",
+      "settings": {
+        "foreground": "#569cd6"
+      }
+    },
+    {
+      "name": "Question Heading",
+      "scope": "markup.heading.question.markdown-mc",
+      "settings": {
+        "foreground": "#dcdcaa"
+      }
+    }
+  ]
+}

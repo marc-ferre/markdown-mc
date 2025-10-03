@@ -1,0 +1,64 @@
+
+{
+  "name": "markdown-mc",
+  "displayName": "Markdown-MC",
+  "description": "Support pour le format Markdown-MC (Multiple Choice Questions)",
+  "version": "1.0.0",
+  "publisher": "marcferre",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/marcferre/markdown-mc"
+  },
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": [
+    "Programming Languages",
+    "Themes"
+  ],
+  "keywords": [
+    "markdown",
+    "qcm",
+    "multiple choice",
+    "quiz",
+    "education"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "markdown-mc",
+        "aliases": ["Markdown-MC", "markdown-mc"],
+        "extensions": [".md"],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "markdown-mc",
+        "scopeName": "text.html.markdown.mc",
+        "path": "./syntaxes/markdown-mc.tmLanguage.json",
+        "embeddedLanguages": {
+          "meta.embedded.block.frontmatter": "yaml"
+        }
+      }
+    ],
+    "snippets": [
+      {
+        "language": "markdown-mc",
+        "path": "./snippets/markdown-mc.json"
+      }
+    ],
+    "themes": [
+      {
+        "label": "Markdown-MC Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/markdown-mc-dark.json"
+      },
+      {
+        "label": "Markdown-MC Light",
+        "uiTheme": "vs",
+        "path": "./themes/markdown-mc-light.json"
+      }
+    ]
+  }
+}
