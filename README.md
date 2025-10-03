@@ -28,8 +28,9 @@ This extension adds support for the **Markdown-MC** (Multiple Choice) language t
 ### Syntax Highlighting
 
 The extension provides syntax highlighting that works with any VS Code theme:
+
 - **QCM Identifiers** `## [id]` - highlighted as headings with special brackets
-- **Questions** `### Question` - highlighted as section headings  
+- **Questions** `### Question` - highlighted as section headings
 - **Correct Answers** `+ Answer` - highlighted as inserted text (usually green)
 - **Incorrect Answers** `- Answer` - highlighted as deleted text (usually red)### Available Snippets
 
