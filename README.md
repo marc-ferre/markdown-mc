@@ -7,7 +7,7 @@ This extension adds support for the **Markdown-MC** (Multiple Choice) language t
 ### Markdown-MC Syntax
 
 - **QCM Identifier**: `## [identifier]`
-- **Question**: `### Your question here`  
+- **Question**: `### Your question here`
 - **Correct Answer**: `+ Correct answer`
 - **Incorrect Answer**: `- Incorrect answer`
 
@@ -15,18 +15,20 @@ This extension adds support for the **Markdown-MC** (Multiple Choice) language t
 
 ```markdown
 ## [seq2g]
+
 ### Among the following sequencing techniques, which one(s) are called high-throughput and "short fragments" (second generation):
 
-+ Illumina.
-+ Ion Torrent.
-- Nanopore.
-- Sanger (by terminators).
+- Illumina.
+- Ion Torrent.
+
+* Nanopore.
+* Sanger (by terminators).
 ```
 
 ### Syntax Highlighting
 
 - **QCM Identifiers** in blue with highlighted brackets
-- **Questions** in golden yellow  
+- **Questions** in golden yellow
 - **Correct Answers** in green with bold `+` symbol
 - **Incorrect Answers** in red with bold `-` symbol
 
