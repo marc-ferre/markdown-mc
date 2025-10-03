@@ -1,80 +1,102 @@
-# Extension Markdown-MC pour VS Code
+# Markdown-MC Extension for VS Code
 
-Cette extension ajoute le support du langage **Markdown-MC** (Multiple Choice) pour créer des questionnaires à choix multiples dans VS Code.
+This extension adds support for the **Markdown-MC** (Multiple Choice) language to create multiple-choice questionnaires in VS Code.
 
-## Fonctionnalités
+## Features
 
-### Syntaxe Markdown-MC
+### Markdown-MC Syntax
 
-- **Identifiant QCM** : `## [identifiant]`
-- **Question** : `### Votre question ici`  
-- **Bonne réponse** : `+ Réponse correcte`
-- **Mauvaise réponse** : `- Réponse incorrecte`
+- **QCM Identifier**: `## [identifier]`
+- **Question**: `### Your question here`  
+- **Correct Answer**: `+ Correct answer`
+- **Incorrect Answer**: `- Incorrect answer`
 
-### Exemple
+### Example
 
 ```markdown
 ## [seq2g]
-### Parmi les techniques de séquençage suivantes, laquelle ou lesquelles sont dites haut débit et «courts fragments» (deuxième génération) :
+### Among the following sequencing techniques, which one(s) are called high-throughput and "short fragments" (second generation):
 
 + Illumina.
 + Ion Torrent.
 - Nanopore.
-- Sanger (par terminateurs).
+- Sanger (by terminators).
 ```
 
-### Coloration syntaxique
+### Syntax Highlighting
 
-- **Identifiants QCM** en bleu avec crochets mis en évidence
-- **Questions** en jaune doré  
-- **Bonnes réponses** en vert avec symbole `+` en gras
-- **Mauvaises réponses** en rouge avec symbole `-` en gras
+- **QCM Identifiers** in blue with highlighted brackets
+- **Questions** in golden yellow  
+- **Correct Answers** in green with bold `+` symbol
+- **Incorrect Answers** in red with bold `-` symbol
 
-### Snippets disponibles
+### Available Snippets
 
-- `qcm` : Crée un QCM complet
-- `qcmh` : En-tête de QCM uniquement
-- `quest` : Question seule
-- `+` : Bonne réponse
-- `-` : Mauvaise réponse
-- `qcm+` : QCM avec plusieurs bonnes réponses
-- `qcm1` : QCM avec une seule bonne réponse
+- `qcm`: Creates a complete QCM
+- `qcmh`: QCM header only
+- `quest`: Question only
+- `+`: Correct answer
+- `-`: Incorrect answer
+- `qcm+`: QCM with multiple correct answers
+- `qcm1`: QCM with single correct answer
 
 ### Validation
 
-L'extension vérifie automatiquement :
+The extension automatically checks:
 
-- Le format des identifiants QCM
-- La présence d'une question après chaque identifiant
-- La structure générale des QCM
+- QCM identifier format
+- Presence of a question after each identifier
+- General QCM structure
 
 ## Installation
 
-1. Ouvrez le dossier de l'extension dans VS Code
-2. Appuyez sur `F5` pour lancer l'extension en mode développement
-3. Dans la nouvelle fenêtre VS Code, ouvrez un fichier `.md`
-4. Commencez à taper vos QCM avec la syntaxe Markdown-MC
+### Method 1: From Release (Recommended)
 
-## Développement
+1. Go to the [Releases page](https://github.com/marc-ferre/markdown-mc/releases)
+2. Download the latest `markdown-mc-x.x.x.vsix` file
+3. In VS Code: `Cmd+Shift+P` → "Extensions: Install from VSIX..."
+4. Select the downloaded `.vsix` file
 
-Pour compiler l'extension :
+### Method 2: From Source
+
+1. Clone this repository
+2. Open the folder in VS Code
+3. Press `F5` to launch the extension in development mode
+4. In the new VS Code window, open a `.md` file
+5. Start typing your QCMs with the Markdown-MC syntax
+
+## Usage
+
+1. Open any `.md` file in VS Code
+2. Change the language mode (bottom right) from "Markdown" to "Markdown-MC"
+3. Activate the theme: `Cmd+Shift+P` → "Preferences: Color Theme" → "Markdown-MC Light/Dark"
+4. Start creating QCMs with syntax highlighting and snippets!
+
+## Development
+
+To compile the extension:
 
 ```bash
 npm install
-npm run compile
+vsce package
 ```
 
-Pour la surveiller en mode développement :
+To package for distribution:
 
 ```bash
-npm run watch
+npm install -g @vscode/vsce
+vsce package
 ```
 
-## Configuration requise
+## Requirements
 
-- VS Code 1.74.0 ou supérieur
-- Node.js et npm pour le développement
+- VS Code 1.74.0 or higher
+- Node.js and npm for development
 
-## Contribution
+## Contributing
 
-N'hésitez pas à contribuer en proposant des améliorations ou en signalant des problèmes.
+Feel free to contribute by suggesting improvements or reporting issues on the [GitHub repository](https://github.com/marc-ferre/markdown-mc).
+
+## License
+
+MIT License - see [LICENSE](LICENSE) file for details.

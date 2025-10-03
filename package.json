@@ -7,7 +7,7 @@
   "publisher": "marcferre",
   "repository": {
     "type": "git",
-    "url": "https://github.com/marcferre/markdown-mc"
+    "url": "https://github.com/marc-ferre/markdown-mc"
   },
   "engines": {
     "vscode": "^1.74.0"
