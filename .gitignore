@@ -7,8 +7,12 @@ node_modules/
 # VS Code
 .vscode/
 
-# Extension builds
-*.vsix
+# Extension builds (keep only latest)
+markdown-mc-1.0.*.vsix
+
+# Test files (optional - can be removed in production)
+test-*.md
+test.qcm
 
 # OS generated files
 .DS_Store
