@@ -27,19 +27,16 @@
     "languages": [
       {
         "id": "markdown-mc",
-        "aliases": ["Markdown-MC", "markdown-mc"],
-        "extensions": [".md"],
+        "aliases": ["Markdown-MC", "markdown-mc", "QCM"],
+        "extensions": [".qcm", ".mcq"],
         "configuration": "./language-configuration.json"
       }
     ],
     "grammars": [
       {
         "language": "markdown-mc",
-        "scopeName": "text.html.markdown.mc",
-        "path": "./syntaxes/markdown-mc.tmLanguage.json",
-        "embeddedLanguages": {
-          "meta.embedded.block.frontmatter": "yaml"
-        }
+        "scopeName": "text.markdown.mc",
+        "path": "./syntaxes/markdown-mc.tmLanguage.json"
       }
     ],
     "snippets": [
