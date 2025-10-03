@@ -27,12 +27,11 @@ This extension adds support for the **Markdown-MC** (Multiple Choice) language t
 
 ### Syntax Highlighting
 
-- **QCM Identifiers** in blue with highlighted brackets
-- **Questions** in golden yellow
-- **Correct Answers** in green with bold `+` symbol
-- **Incorrect Answers** in red with bold `-` symbol
-
-### Available Snippets
+The extension provides syntax highlighting that works with any VS Code theme:
+- **QCM Identifiers** `## [id]` - highlighted as headings with special brackets
+- **Questions** `### Question` - highlighted as section headings  
+- **Correct Answers** `+ Answer` - highlighted as inserted text (usually green)
+- **Incorrect Answers** `- Answer` - highlighted as deleted text (usually red)### Available Snippets
 
 - `qcm`: Creates a complete QCM
 - `qcmh`: QCM header only
@@ -71,8 +70,9 @@ The extension automatically checks:
 
 1. Open any `.md` file in VS Code
 2. Change the language mode (bottom right) from "Markdown" to "Markdown-MC"
-3. Activate the theme: `Cmd+Shift+P` → "Preferences: Color Theme" → "Markdown-MC Light/Dark"
-4. Start creating QCMs with syntax highlighting and snippets!
+3. Start creating QCMs with syntax highlighting and snippets!
+
+The syntax highlighting works with any VS Code theme you prefer.
 
 ## Development
 

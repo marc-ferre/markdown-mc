@@ -13,8 +13,7 @@
     "vscode": "^1.74.0"
   },
   "categories": [
-    "Programming Languages",
-    "Themes"
+    "Programming Languages"
   ],
   "keywords": [
     "markdown",
@@ -43,18 +42,6 @@
       {
         "language": "markdown-mc",
         "path": "./snippets/markdown-mc.json"
-      }
-    ],
-    "themes": [
-      {
-        "label": "Markdown-MC Dark",
-        "uiTheme": "vs-dark",
-        "path": "./themes/markdown-mc-dark.json"
-      },
-      {
-        "label": "Markdown-MC Light",
-        "uiTheme": "vs",
-        "path": "./themes/markdown-mc-light.json"
       }
     ]
   }
