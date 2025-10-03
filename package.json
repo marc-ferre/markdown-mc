@@ -3,7 +3,7 @@
   "name": "markdown-mc",
   "displayName": "Markdown-MC",
   "description": "Support pour le format Markdown-MC (Multiple Choice Questions)",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "publisher": "marcferre",
   "repository": {
     "type": "git",
