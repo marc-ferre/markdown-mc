@@ -3,7 +3,7 @@ name: Publish VSIX on tag
 on:
   push:
     tags:
-      - 'v*'
+      - "v*"
 
 jobs:
   build-and-release:
@@ -16,13 +16,29 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '18'
+          node-version: "18"
 
       - name: Install vsce
-        run: npm install -g vsce
+        run: |
+          echo "node version:" $(node -v)
+          echo "npm version:" $(npm -v)
+          npm install -g vsce
+          vsce --version || true
+
+      - name: Install dependencies
+        run: |
+          # ensure node deps are installed (vsce can require package files)
+          if [ -f package-lock.json ]; then npm ci; else npm install || true; fi
+
+      - name: Debug workspace
+        run: |
+          echo "Listing workspace files:"
+          ls -la
+          echo "Files in root:"; find . -maxdepth 2 -type f -print
 
       - name: Package extension
         run: |
+          set -x
           vsce package -o package.vsix
 
       - name: Upload artifact (vsix)
