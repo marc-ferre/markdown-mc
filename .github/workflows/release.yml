@@ -54,4 +54,4 @@ jobs:
         with:
           tag: ${{ github.ref_name }}
           name: ${{ github.ref_name }}
-          files: package.vsix
+          artifacts: package.vsix
