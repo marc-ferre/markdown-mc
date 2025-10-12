@@ -69,9 +69,22 @@ The extension automatically checks:
 
 ## Usage
 
+### Option 1: Using .mdmc files (recommended)
+
+1. Create a new file with the `.mdmc` extension
+2. The Markdown-MC syntax highlighting will be automatically activated!
+
+### Option 2: Using existing .md files
+
 1. Open any `.md` file in VS Code
 2. Change the language mode (bottom right) from "Markdown" to "Markdown-MC"
-3. Start creating QCMs with syntax highlighting and snippets!
+
+### Supported File Extensions
+
+- `.mdmc` (automatically detected)
+- `.qcm` (automatically detected)
+- `.mcq` (automatically detected)
+- `.md` (manual mode switch required)
 
 The syntax highlighting works with any VS Code theme you prefer.
 
