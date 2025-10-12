@@ -7,6 +7,8 @@ on:
 
 jobs:
   build-and-release:
+    permissions:
+      contents: write
     runs-on: ubuntu-latest
 
     steps:
@@ -48,9 +50,8 @@ jobs:
           path: package.vsix
 
       - name: Create GitHub Release and upload VSIX
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         uses: ncipollo/release-action@v1
         with:
-          tag: ${{ github.ref }}
+          tag: ${{ github.ref_name }}
+          name: ${{ github.ref_name }}
           files: package.vsix
