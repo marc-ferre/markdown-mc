@@ -1,5 +1,7 @@
 # Markdown-MC Extension for VS Code
 
+[![Release](https://img.shields.io/github/v/release/marc-ferre/markdown-mc)](https://github.com/marc-ferre/markdown-mc/releases/latest)
+
 This extension adds support for the **Markdown-MC** (Multiple Choice) language to create multiple-choice questionnaires in VS Code.
 
 ## Features
