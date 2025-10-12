@@ -8,11 +8,15 @@ node_modules/
 .vscode/
 
 # Extension builds (keep only latest)
-markdown-mc-1.0.*.vsix
+*.vsix
 
-# Test files (optional - can be removed in production)
+# Test files (optional - can be removed in production)  
 test-*.md
 test.qcm
+
+# Debug/log files
+gh-run-*.zip
+logs_*.zip
 
 # OS generated files
 .DS_Store
